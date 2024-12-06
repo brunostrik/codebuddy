@@ -1,9 +1,12 @@
 const express = require('express');
+const cors = require('cors');
 const bodyParser = require('body-parser');
 const { OpenAI, Configuration } = require('openai');
 require('dotenv').config();
 
+
 const app = express();
+app.use(cors());
 const port = 30000;
 
 // Middleware para parsear JSON
