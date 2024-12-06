@@ -4,7 +4,7 @@ const { OpenAI, Configuration } = require('openai');
 require('dotenv').config();
 
 const app = express();
-const port = 1000;
+const port = 30000;
 
 // Middleware para parsear JSON
 app.use(bodyParser.json());
