@@ -3,6 +3,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const { OpenAI, Configuration } = require('openai');
 require('dotenv').config();
+const path = require('path'); // Importa o módulo 'path'
 
 
 const app = express();
@@ -17,7 +18,12 @@ const openai = new OpenAI({
     apiKey: process.env['OPENAI_API_KEY'],
 });
 
-// Rota principal
+// Rota para a página principal
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'codebuddy_web.html'));
+});
+
+// Rota da API
 app.post('/processar-codigo', async (req, res) => {
   const { codigo } = req.body;
   if (!codigo) {
