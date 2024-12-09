@@ -227,7 +227,7 @@ app.post('/processar-codigo', async (req, res) => {
         { role: "assistant", content: mapaIncidencias},
         { role: "user", content: "O código-fonte do estudante: " + codigo},
         { role: "assistant", content: "Problemas já identificados: " + checksMap},
-        { role: "user", content: "Gere agora a mensagem de feedback" + codigo}
+        { role: "user", content: "Gere agora a mensagem de feedback. Importante: Não refatore o código! Para exemplos use situações diferentes" + codigo}
       ],
     });
     const resultadoFeedback = feedbackResponse.choices[0].message.content;
