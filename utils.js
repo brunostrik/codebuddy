@@ -104,7 +104,7 @@ function identifyDifficulties(checks){
     const object_relations_difficulties = checks.duplicate_code_smell || checks.liskov_substitution_principle_violation || 
         checks.feature_envy_smell || checks.dependency_inversion_principle_violation || checks.refused_bequest_smell ||
         checks.parallel_inheritance_hierarchies_smell;
-    const polymorphism_overloading_difficulties = checks.switch_statements_smell || duplicate_code_smell;
+    const polymorphism_overloading_difficulties = checks.switch_statements_smell || checks.duplicate_code_smell;
     const encapsulation_difficulties = checks.demeter_law_violation || checks.middle_man_smell || checks.shotgun_surgery_smell ||
         checks.single_responsability_principle_violation || checks.inappropriate_intimacy_smell || checks.feature_envy_smell ||
         checks.tell_dont_ask_principle_violation || checks.message_chains_smell;
