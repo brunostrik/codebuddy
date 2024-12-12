@@ -1,0 +1,14 @@
+Erro capturado: guid is not defined
+Stack Trace:
+ReferenceError: guid is not defined
+    at C:\Users\Admin\source\repos\codebuddy\index.js:494:45
+    at Layer.handle [as handle_request] (C:\Users\Admin\source\repos\codebuddy\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Admin\source\repos\codebuddy\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\Admin\source\repos\codebuddy\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\Admin\source\repos\codebuddy\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Admin\source\repos\codebuddy\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\Admin\source\repos\codebuddy\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\Admin\source\repos\codebuddy\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\Admin\source\repos\codebuddy\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\Admin\source\repos\codebuddy\node_modules\express\lib\router\index.js:280:10)
+
