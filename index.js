@@ -426,7 +426,7 @@ app.post('/processar-codigo-v2', async (req, res) => {
         const c6 = "A incidência de problemas do tipo Middle Man Smell, Shotgun Surgery Smell, Inappropriate Intimacy Smell, Feature Envy Smell, Message Chains Smell, Violações do Princípio Tell Don't Asl, Violações do Single Responsability Principle e Violações da Lei de Demeter indicam Dificuldades em Entender e Implementar o Conceito de Encapsulamento. ";
         const mapaIncidencias = c1 + c2 + c3 + c4 + c5 + c6;
         const response = await openai.chat.completions.create({
-        model: "gpt-4o-mini",
+        model: "o1-mini",
         messages: [
             { role: "system", content: "You are a teacher who analyzes your students' source code and generates a `code_problems_report`, marking `true` for the problems identified in the provided snippet and `false` for those not present in the provided snippet." },
             { role: "user", content: codigo },
